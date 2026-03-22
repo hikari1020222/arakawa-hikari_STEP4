@@ -23,8 +23,8 @@
           <label for="age">年齢:</label><br>
           <input type="number" id="age" name="age"><br>
 
-          <label for="phone">電話番号:</label><br>
-          <input type="phone" id="phone" name="phone"><br>
+          <label for="tel">電話番号:</label><br>
+          <input type="tel" id="tel" name="tel"><br>
 
           <label for="email">メールアドレス:</label><br>
           <input type="email" id="email" name="email"><br>
