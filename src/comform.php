@@ -17,13 +17,17 @@
 
             if (!preg_match("/^[ぁ-んァ-ヶ一ー-龠a-zA-Z\s]+$/u",$username)){
                 echo "<p>名前はひらがな、カタカナ、漢字、英字のみ使用できます。</p>";
-            } elseif (!is_numeric($age) || $age < 0 || $age > 150){
+            } 
+            if (!is_numeric($age) || $age < 0 || $age > 150){
                 echo "<p>年齢は0～150の間で入力してください。</p>";
-            } elseif (!preg_match("/^[0-9\-]+$/", $phone)){
+            } 
+            if (!preg_match("/^[0-9\-]+$/", $phone)){
                 echo "<p>電話番号は半角数字とハイフンのみ使用できます。</p>";
-            } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+            } 
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
                 echo "<p>メールアドレスの形式が正しくありません。</p>";
-            } elseif (!preg_match("/^[ぁ-んァ-ヶ一ー-龠a-zA-Z\s]+$/u",$address)){
+            } 
+            if (!preg_match("/^[ぁ-んァ-ヶ一ー-龠a-zA-Z\s]+$/u",$address)){
                 echo "<p>住所はひらがな、カタカナ、漢字、英字のみ使用できます。</p>";
             } else {
                 echo "<p>名前:".htmlspecialchars($username,ENT_QUOTES,'UTF-8')."</p>";

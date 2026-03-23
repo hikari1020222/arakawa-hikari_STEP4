@@ -27,7 +27,7 @@
           <input type="phone" id="phone" name="phone"><br>
 
           <label for="email">メールアドレス:</label><br>
-          <input type="email" id="email" name="email"><br>
+          <input type="email" id="email" name="email"><br>che
 
           <label for="address">住所:</label><br>
           <input type="text" id="address" name="address"><br>
